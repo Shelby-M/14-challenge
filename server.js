@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const exphbs = require("express-handlebars");
 const session = require(`express-session`);
@@ -15,14 +16,9 @@ app.use(
     saveUninitialized: false,
   })
 );
+app.use(express.static(path.join(__dirname, "public")));
 
-
-
-app.get('/', (req,res) =>{
-
-})
-
-
+app.get("/", (req, res) => {});
 
 app.listen(PORT, () => {
   console.log("App listening on PORT " + PORT);
