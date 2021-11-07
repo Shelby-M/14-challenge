@@ -19,10 +19,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.render("homepage");
-});
+app.use(require("./controllers"));
 
 app.listen(PORT, () => {
   console.log("App listening on PORT " + PORT);

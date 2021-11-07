@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
     <title>Blog</title>
 </head>
 <body>
+    <nav class= "navLink">
+        <a class="link" href="/"> HOME</a>
+        <a class="link" href="/"> BLOG PAGE</a>
+        {{#if loggedIn }}
+        <a class="link" href="/" id ="logout">LOGOUT</a>
+        {{else}}
+        <a class="link" href="/login">LOGIN</a>
+        {{/if}}
+    </nav>
+    
     <div class="container">
         {{{body}}}
     </div>
