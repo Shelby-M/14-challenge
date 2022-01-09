@@ -1,7 +1,7 @@
 {
   "name": "14-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Table Of Contents",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +27,7 @@
     "mysql2": "^2.3.3-rc.0",
     "node": "^17.0.1",
     "sequelize": "^6.9.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
